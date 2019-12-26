@@ -1,2 +1,2 @@
 # RESAC-PHP
-Réseau social des Caïman
+Réseau social des Caïmans

@@ -1,0 +1,6 @@
+/vendor
+index.silex.php
+/views/twig
+routes.php
+composer.json
+composer.lock

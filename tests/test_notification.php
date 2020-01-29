@@ -5,16 +5,16 @@
 
 	if(isset($_GET["send"])){
 		extract($_GET);
-		set_notification($type,$message);
+		$_Notif->set_notification($type,$message);
 	}
 
 	if(isset($_GET["delete"])){
 		extract($_GET);
-		delete_notification($id);
+		$_Notif->delete_notification($id);
 	}
 
 	if(isset($_GET["delete_all"]))
-		clear_notification();
+		$_Notif->clear_notification();
 ?>
 <!DOCTYPE html>
 <html>
@@ -50,7 +50,7 @@
 
 	<h3>Liste des notifications</h3>
 
-	<?php foreach (get_notifications() as $notif): ?>
+	<?php foreach ($_Notif->get_notifications() as $notif): ?>
 
 		<div class="border">
 			<div><b>Type:</b> <?= $notif["type"] ?></div>

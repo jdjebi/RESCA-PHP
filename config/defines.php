@@ -18,4 +18,5 @@ $HTTP_HOST = $PROTOCOL . '://' . $HOST;
 define('PROTOCOL',$PROTOCOL);
 define('HOST',$HOST);
 define("HTTP_HOST",$HTTP_HOST);
+
 ?>
